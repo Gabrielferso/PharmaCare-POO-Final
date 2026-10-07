@@ -509,7 +509,6 @@ PharmaCare/
 │   └── entrega_service.py
 │
 ├── padroes/
-│   ├── factory/
 │   └── strategy/
 │
 └── README.md
