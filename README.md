@@ -1,14 +1,6 @@
 # PharmaCare-POO-Final
 Projeto final de POO com tema de um sistema para gerenciar a dispensação e entrega de medicamentos aos pacientes, seguindo tratamentos prescritos por profissionais de saúde. Destaque da disciplina: permite trabalhar associação, composição, herança, polimorfismo e encapsulamento de forma integrada.
 
-Sim. Como o objetivo agora é colocar **diretamente no `README.md` do GitHub**, eu deixaria a documentação mais **enxuta, técnica e organizada**, seguindo exatamente os cinco tópicos que você passou, em vez daquela estrutura mais geral.
-
-Também ajustei a arquitetura para considerar **`Paciente`, `Medico` e `Farmaceutico` como subclasses de `Usuario`**, como decidimos anteriormente.
-
-Abaixo está o conteúdo já em **Markdown**, pronto para copiar para o `README.md`. A base considera a documentação que você enviou. 
-
----
-
 # PharmaCare — Gerenciamento de Medicamentos
 
 Sistema de gerenciamento de medicamentos desenvolvido para a disciplina de **Programação Orientada a Objetos (POO)**.
