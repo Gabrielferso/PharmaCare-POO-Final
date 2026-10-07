@@ -489,7 +489,7 @@ PharmaCare/
 │
 ├── main.py
 │
-├── models/
+├── modelos/
 │   ├── usuario.py
 │   ├── paciente.py
 │   ├── medico.py
@@ -502,13 +502,13 @@ PharmaCare/
 │   ├── lote.py
 │   └── entrega.py
 │
-├── services/
+├── servicos/
 │   ├── usuario_service.py
 │   ├── prescricao_service.py
 │   ├── estoque_service.py
 │   └── entrega_service.py
 │
-├── patterns/
+├── padroes/
 │   ├── factory/
 │   └── strategy/
 │
