@@ -461,8 +461,7 @@ classDiagram
     Estoquista "1" --> "0..*" EntregaMedicamento : registra
     Farmaceutico "1" --> "0..*" Tratamento : cadastra
     Farmaceutico "1" --> "0..*" Prescricao : confere
-    EntregaMedicamento "*" --> "1" Medicamento : registra
-    EntregaMedicamento "*" --> "1" Lote : utiliza
+    EntregaMedicamento "*" --> "1" Medicamento : possui
 ```
 
 ### Diagrama caso de uso
