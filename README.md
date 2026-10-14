@@ -360,6 +360,7 @@ Esta seção apresenta como os objetos do sistema se comunicam durante a execuç
 
 ### Diagrama UML
 
+```mermaid
 classDiagram
     class Usuario {
         <<abstract>>
