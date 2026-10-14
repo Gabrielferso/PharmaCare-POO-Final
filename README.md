@@ -458,8 +458,9 @@ classDiagram
 
     Paciente "1" --> "0..*" EntregaMedicamento : recebe
     Prescricao "1" --> "0..*" EntregaMedicamento : autoriza
-    Farmaceutico "1" --> "0..*" EntregaMedicamento : registra
+    Estoquista "1" --> "0..*" EntregaMedicamento : registra
     Farmaceutico "1" --> "0..*" Tratamento : cadastra
+    Farmaceutico "1" --> "0..*" Prescrição : confere
     EntregaMedicamento "*" --> "1" Medicamento : registra
     EntregaMedicamento "*" --> "1" Lote : utiliza
 ```
