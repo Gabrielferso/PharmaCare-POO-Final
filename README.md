@@ -466,7 +466,7 @@ classDiagram
 
 ### Diagrama caso de uso
 
-![Diagrama de Casos de Uso do PharmaCare](img/caso-de-uso.png)
+![Diagrama de Casos de Uso do PharmaCare](docs/caso-de-uso-2.png)
 
 ### Fluxo resumido
 
