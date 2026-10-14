@@ -454,7 +454,7 @@ classDiagram
     Farmaceutico "1" --> "0..*" EntregaMedicamento : registra
     EntregaMedicamento "*" --> "1" Medicamento : registra
     EntregaMedicamento "*" --> "1" Lote : utiliza
-
+```
 
 ### Fluxo resumido
 
