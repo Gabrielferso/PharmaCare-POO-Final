@@ -456,6 +456,10 @@ classDiagram
     EntregaMedicamento "*" --> "1" Lote : utiliza
 ```
 
+### Diagrama caso de uso
+
+img/Diagrama caso de uso pharmaCare.drawio.png
+
 ### Fluxo resumido
 
 ```text
