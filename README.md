@@ -447,7 +447,7 @@ classDiagram
 
     Paciente "1" --> "0..*" Tratamento : possui
     Estoque "1" o-- "0..*" Lote : controla
-    Medicamento "1" --> "0..*" Lote : possui lotes
+    Medicamento "1" --> "0..*" Lote : possui
 
     Paciente "1" --> "0..*" EntregaMedicamento : recebe
     Prescricao "1" --> "0..*" EntregaMedicamento : autoriza
