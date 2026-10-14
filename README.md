@@ -468,28 +468,6 @@ classDiagram
 
 ![Diagrama de Casos de Uso do PharmaCare](docs/caso-de-uso-2.png)
 
-### Fluxo resumido
-
-```text
-Farmacêutico
-      ↓
-Consulta prescrição
-      ↓
-Valida prescrição
-      ↓
-Verifica estoque
-      ↓
-Verifica validade do lote
-      ↓
-Realiza entrega
-      ↓
-Atualiza estoque
-      ↓
-Registra histórico
-```
-
----
-
 # 6. Configuração
 
 ## 6.1 Bibliotecas
