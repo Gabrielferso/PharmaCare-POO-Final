@@ -442,6 +442,7 @@ classDiagram
     Usuario <|-- Paciente
     Usuario <|-- Medico
     Usuario <|-- Farmaceutico
+    Usuario <|-- Estoquista
 
     Medico "1" --> "0..*" Prescricao : emite
     Paciente "1" --> "0..*" Prescricao : possui
@@ -453,6 +454,7 @@ classDiagram
     Medicamento "1" --> "0..*" Lote : possui
     Estoquista "0..*" --> "1" Estoque : verifica
     Estoquista "0..*" --> "0..*" Lote : verifica
+    Estoquista "1" --> "0..*" Medicamento : cadastra 
 
     Paciente "1" --> "0..*" EntregaMedicamento : recebe
     Prescricao "1" --> "0..*" EntregaMedicamento : autoriza
