@@ -382,7 +382,10 @@ classDiagram
 
     class Farmaceutico {
         +conferirPrescricao()
-        +realizarEntrega()
+    }
+
+    class Estoquista {
+      +realizarentrega()
     }
 
     class Medicamento {
@@ -448,10 +451,13 @@ classDiagram
     Paciente "1" --> "0..*" Tratamento : possui
     Estoque "1" o-- "0..*" Lote : controla
     Medicamento "1" --> "0..*" Lote : possui
+    Estoquista "0..*" --> "1" Estoque : verifica
+    Estoquista "0..*" --> "0..*" Lote : verifica
 
     Paciente "1" --> "0..*" EntregaMedicamento : recebe
     Prescricao "1" --> "0..*" EntregaMedicamento : autoriza
     Farmaceutico "1" --> "0..*" EntregaMedicamento : registra
+    Farmaceutico "1" --> "0..*" Tratamento : cadastra
     EntregaMedicamento "*" --> "1" Medicamento : registra
     EntregaMedicamento "*" --> "1" Lote : utiliza
 ```
