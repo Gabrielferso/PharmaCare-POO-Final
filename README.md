@@ -358,6 +358,103 @@ classDiagram
 
 Esta seção apresenta como os objetos do sistema se comunicam durante a execução das principais funcionalidades.
 
+### Diagrama UML
+
+classDiagram
+    class Usuario {
+        <<abstract>>
+        +int id
+        +str nome
+        +str email
+    }
+
+    class Paciente {
+        +str cpf
+        +consultarPrescricoes()
+        +consultarHistorico()
+    }
+
+    class Medico {
+        +str registroProfissional
+        +emitirPrescricao()
+    }
+
+    class Farmaceutico {
+        +conferirPrescricao()
+        +realizarEntrega()
+    }
+
+    class Medicamento {
+        +str codigo
+        +str nome
+        +str fabricante
+        +str dosagem
+        +str tipo
+        +consultarEstoque()
+        +verificarDisponibilidade()
+    }
+
+    class Prescricao {
+        +int id
+        +date data
+        +validarPrescricao()
+        +adicionarMedicamento()
+        +removerMedicamento()
+    }
+
+    class ItemPrescrito {
+        +int quantidade
+    }
+
+    class Tratamento {
+        +int id
+        +date dataInicio
+        +date dataFim
+    }
+
+    class Estoque {
+        +consultarQuantidade()
+        +adicionarEstoque()
+        +removerEstoque()
+    }
+
+    class Lote {
+        +str codigo
+        +date dataFabricacao
+        +date dataValidade
+        +int quantidade
+        +verificarValidade()
+    }
+
+    class EntregaMedicamento {
+        +int id
+        +date data
+        +int quantidade
+        +verificarDisponibilidade()
+        +realizarEntrega()
+        +registrarEntrega()
+    }
+
+    Usuario <|-- Paciente
+    Usuario <|-- Medico
+    Usuario <|-- Farmaceutico
+
+    Medico "1" --> "0..*" Prescricao : emite
+    Paciente "1" --> "0..*" Prescricao : possui
+    Prescricao "1" *-- "1..*" ItemPrescrito : contém
+    ItemPrescrito "*" --> "1" Medicamento : especifica
+
+    Paciente "1" --> "0..*" Tratamento : possui
+    Estoque "1" o-- "0..*" Lote : controla
+    Medicamento "1" --> "0..*" Lote : possui lotes
+
+    Paciente "1" --> "0..*" EntregaMedicamento : recebe
+    Prescricao "1" --> "0..*" EntregaMedicamento : autoriza
+    Farmaceutico "1" --> "0..*" EntregaMedicamento : registra
+    EntregaMedicamento "*" --> "1" Medicamento : registra
+    EntregaMedicamento "*" --> "1" Lote : utiliza
+
+
 ### Fluxo resumido
 
 ```text
