@@ -364,7 +364,7 @@ Esta seção apresenta como os objetos do sistema se comunicam durante a execuç
 classDiagram
     class Usuario {
         <<abstract>>
-        +int id
+        +str id
         +str nome
         +str email
     }
